@@ -101,8 +101,6 @@ class EngineConfig(object):
         return self.cfg.getint('EngineSetting', 'trace_level')
 
 
-
-
 class DBConfig(object):
     """docstring for DBConfig"""
 
@@ -198,6 +196,12 @@ class EmailConfig(object):
     def email_enable(self):
         return self.cfg.get('EmailSetting', 'enable')
 
+    def email_ssl(self):
+        return self.cfg.get('EmailSetting', 'ssl')
+
+    def email_host_port_ssl(self):
+        return self.cfg.get('EmailSetting', 'host_port_ssl')
+
 
 class Setting(object):
     """docstring for Setting"""
@@ -219,7 +223,7 @@ class Setting(object):
 
     def interval_warning_check(self):
         return self.cfg.getint('Interval', 'warning_check')
-
+    
     def folder_collection(self):
         return collection
 
@@ -250,6 +254,28 @@ class Setting(object):
             oddRegularTrace[i[0]] = i[1]
         return oddRegularTrace
 
+
+class Cycle(object):
+    """docstring for Cycle"""
+
+    def __init__(self):
+        self.cfg = read_config_file()
+
+
+    def cron_cycle(self):
+        return self.cfg.get('Cycle', 'cycle')
+
+    def cron_day(self):
+        return self.cfg.getint('Cycle', 'day')
+    
+    def cron_hour(self):
+        return self.cfg.getint('Cycle', 'hour')
+    
+    def cron_minutes(self):
+        return self.cfg.getint('Cycle', 'minutes')
+
+
+
 class General(object):
     """docstring for General"""
 
@@ -258,6 +284,7 @@ class General(object):
 
     def get_PRODUCT(self):
         return str(self.cfg.get('General', 'PRODUCT'))
+
 
 if __name__ == '__main__':
 
