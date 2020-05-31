@@ -22,6 +22,8 @@ strTraceFolder = setting.folder_trace()
 
 #<<<Get Version>>>
 
+Version = ave.get_last_tag()
+
 
 # <<<Get Config Field>>>
 
