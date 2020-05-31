@@ -1,6 +1,10 @@
 #coding:utf-8
 
-import subprocess
+import commands
 
 def get_tag():
-    subprocess
+    return commands.getoutput('git tag')
+
+
+
+print(get_tag())
