@@ -13,11 +13,14 @@ except Exception:
     import ConfigParser as cp
 
 import GetConfig as gc
+import AutoVersion as ave
 
 # <<<Get Config Field>>>
 setting = gc.Setting()
 strCFGFolder = setting.folder_cfgbackup()
 strTraceFolder = setting.folder_trace()
+
+#<<<Get Version>>>
 
 
 # <<<Get Config Field>>>
