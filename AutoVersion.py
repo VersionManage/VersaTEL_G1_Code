@@ -68,5 +68,5 @@ def auto_cut_version(cut_type):
 
 
 if __name__ == '__main__':
-    auto_version()
-    #auto_cut_version('test')
+    #auto_version()
+    auto_cut_version('test')

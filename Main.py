@@ -21,7 +21,8 @@ strCFGFolder = setting.folder_cfgbackup()
 strTraceFolder = setting.folder_trace()
 
 #<<<Version>>>
-Version = 'v0.5_aplt20200601'# <<<Get Config Field>>>
+Version = 'v0.5_aplt20200601_test20200601_15:36:46'
+# <<<Get Config Field>>>
 
 
 # <<<Help String Feild>>>
