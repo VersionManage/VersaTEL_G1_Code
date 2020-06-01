@@ -83,5 +83,6 @@ class AutoCutVersion(Source):
 
 
 if __name__ == '__main__':
+    pass
     #auto_version()
-    auto_cut_version()
+    #auto_cut_version()
