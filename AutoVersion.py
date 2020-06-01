@@ -63,7 +63,7 @@ class AutoCutVersion(Source):
         self.new_tag = self.get_last_tag()
         self.auto_cut_version()
 
-    def auto_cut_version(self,cut_type):
+    def auto_cut_version(self):
         if self.new_tag:
             self.cut_tag = self.get_cut_tag()
             self.change_file_version(self.cut_tag)
@@ -83,5 +83,5 @@ class AutoCutVersion(Source):
 
 
 if __name__ == '__main__':
-    auto_version()
-    #auto_cut_version('test')
+    #auto_version()
+    auto_cut_version()
