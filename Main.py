@@ -22,6 +22,8 @@ strTraceFolder = setting.folder_trace()
 
 #<<<Version>>>
 Version = 'v0.5_aplt20200601'
+# <<<Get Config Field>>>
+
 
 # <<<Help String Feild>>>
 strHelp = '''
