@@ -20,10 +20,8 @@ setting = gc.Setting()
 strCFGFolder = setting.folder_cfgbackup()
 strTraceFolder = setting.folder_trace()
 
-#<<<Get Version>>>
-
-Version = ave.get_last_tag()
-
+#<<<Version>>>
+Version = 'v0.4'
 
 # <<<Get Config Field>>>
 
