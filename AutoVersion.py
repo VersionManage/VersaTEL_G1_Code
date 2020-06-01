@@ -66,4 +66,4 @@ def auto_cut_version(cut_type):
 
 
 if __name__ == '__main__':
-    auto_cut_version('aplt')
+    auto_version()
