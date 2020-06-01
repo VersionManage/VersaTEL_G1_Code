@@ -41,7 +41,7 @@ class Source(object):
         commands.getoutput('git tag %s' % last_tag)
 
     def time_now_tag(self):
-        return datetime.datetime.now().strftime('%Y%m%d_%H:%M:%S')
+        return datetime.datetime.now().strftime('%Y%m%d/%H:%M:%S')
 
 
 class AutoVersion(Source):
