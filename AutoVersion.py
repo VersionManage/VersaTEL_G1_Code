@@ -13,7 +13,7 @@ def get_last_tag():
 def change_file_version(last_tag):
 
     replace_version = "Version = '%s'" % last_tag
-    old_str = r"Version = [a-zA-Z0-9_']*"
+    old_str = r"Version = [a-zA-Z0-9_.']*"
 
     with open('Main.py','r') as f1,open('Main2.py','w') as f2:
         for line in f1:
