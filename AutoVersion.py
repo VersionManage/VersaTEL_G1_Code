@@ -16,8 +16,8 @@ def change_file_version(last_tag):
     with open('Main.py','r') as f1,open('Main2.py','w') as f2:
         for line in f1:
             f2.write(re.sub(old_str,replace_version,line,1))
-    os.remove('Main.py')
-    os.rename('Main2.py','Main.py')
+    # os.remove('Main.py')
+    # os.rename('Main2.py','Main.py')
 
 def change_version_commit(last_tag):
     commands.getoutput('git add *.py')
